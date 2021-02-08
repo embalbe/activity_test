@@ -2,11 +2,11 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
- repo:  # id of input
+  repo:  # id of input
     description: 'repository to be check'
     required: true
     default: ''
- codespell_list:  # id of input
+  codespell_list:  # id of input
     description: 'exclude words'
     required: true
     default: 'SKIP'
