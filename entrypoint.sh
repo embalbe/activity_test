@@ -1,21 +1,24 @@
 #!/bin/sh -l
 
-git clone --recursive https://github.com/EmbALL/STMems_Standard_C_drivers.git stdc
+if [ !(-d /repo) ]
+then
+ git clone --recursive $1 repo
+ cd repo
+fi
 
-cd stdc
-if [ $1 != "SKIP" ]
+if [ $2 != "SKIP" ]
 then
   codespell --builtin clear,rare,code,names \
   --ignore-words-list ths,dur,ois,tim,stdio \
   --interactive 0 \ 
-  --skip="./.git,./_prj_NucleoF411, \
-          ./_prj_MKI109V3,./_prj_spc584b, \
-          ./_bin,./_resources/STMems_Finite_State_Machine, \
+  --skip="./.git,./_prj_NucleoF411, 
+          ./_prj_MKI109V3,./_prj_spc584b, 
+          ./_bin,./_resources/STMems_Finite_State_Machine, 
           ./_resources/STMems_Machine_Learning_Core" 
 fi
 
 
-if [ $2 != "SKIP" ]
+if [ $3 != "SKIP" ]
 then
   astyle --style=otbs \
   --indent=spaces=2 \
@@ -55,6 +58,6 @@ then
   --lineend=windows
 fi
 
-echo "your input $1 $2"
+echo "your input $1 $2 $3"
 myvar="Hello"
 echo "::set-output name=results::$myvar"

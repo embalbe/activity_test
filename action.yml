@@ -2,14 +2,18 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
-  codespell_list:  # id of input
-    description: 'exclude words'
+ repo:  # id of input
+    description: 'repository to be check'
     required: true
     default: ''
+ codespell_list:  # id of input
+    description: 'exclude words'
+    required: true
+    default: 'SKIP'
   astyle_cfg:  # id of input
     description: 'Artistic Style Configuraiton file'
     required: true
-    default: ''
+    default: 'SKIP'
 outputs:
   results: # id of output
     description: 'code spell results'
@@ -17,5 +21,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
+    - ${{ inputs.repo}} 
     - ${{ inputs.codespell_list }} 
     - ${{ inputs.astyle_cfg }}
