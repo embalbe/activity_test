@@ -50,4 +50,4 @@ astyle --style=otbs \
 
 echo "your input $1 $2"
 myvar="Hello"
-echo "::set-output name=time::$myvar"
+echo "::set-output name=results:$myvar"
