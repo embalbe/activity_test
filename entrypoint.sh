@@ -1,9 +1,9 @@
 #!/bin/sh -l
 
-if [ !(-d /repo) ]
+if [ !(-d /wd) ]
 then
- git clone --recursive $1 repo
- cd repo
+ git clone --recursive $1 wd
+ cd wd
 fi
 
 if [ $2 != "SKIP" ]
