@@ -21,6 +21,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.repo}} 
+    - ${{ inputs.repo }} 
     - ${{ inputs.codespell_list }} 
     - ${{ inputs.astyle_cfg }}
