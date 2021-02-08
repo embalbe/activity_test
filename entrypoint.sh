@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-if [ !(-d /wd) ]
+if [ !-d /wd ]
 then
  git clone --recursive $1 wd
  cd wd
