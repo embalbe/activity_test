@@ -8,6 +8,7 @@ fi
 
 if [ $2 != "SKIP" ]
 then
+  pwd
   codespell --builtin clear,rare,code,names \
   --ignore-words-list ths,dur,ois,tim,stdio \
   --interactive 0 \ 
@@ -17,6 +18,7 @@ fi
 
 if [ $3 != "SKIP" ]
 then
+  pwd
   astyle --options=$3
 fi
 
