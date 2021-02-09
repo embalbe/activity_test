@@ -3,8 +3,9 @@
 if [ ! -d 'wd' ]
 then
  git clone --recursive $1 wd
- cd wd
 fi
+
+cd wd
 
 if [ $2 != "SKIP" ]
 then
