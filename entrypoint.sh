@@ -17,7 +17,7 @@ fi
 if [ $3 != "SKIP" ]
 then
   pwd
-  astyle --options=$3
+  astyle --options=$3 --recursive ./*.c,*.h
 fi
 
 echo "your input $1 $2 $3"
