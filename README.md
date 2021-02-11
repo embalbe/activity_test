@@ -1,23 +1,11 @@
-```markdown
-# Hello world docker action
+# Actions
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+The purpose of this repository is offer services dedicate to the maintenance of GitHub reposytory for all ST user.
 
-## Inputs
+Here you can find different GitHub actions based on Doker images that you can use for test your pull request and cotribute to ST repository or only for testing your code.
 
-### `who-to-greet`
+Below a brief descriprion of the actions availble, inside of every action-folder a full action documentation is availabe.
 
-**Required** The name of the person to greet. Default `"World"`.
+Enjoy :)
 
-## Outputs
-
-### `time`
-
-The time we greeted you.
-
-## Example usage
-
-uses: actions/hello-world-docker-action@v1
-with:
-  who-to-greet: 'Mona the Octocat'
-```
+ - **action_001**: spell check and formatting for code
