@@ -1,6 +1,6 @@
 # Actions
 
-The purpose of this repository is offer services dedicate to the maintenance of GitHub reposytory for all ST user.
+The purpose of this repository is offer services dedicate to the maintenance of GitHub reposytory for all ST users.
 
 Here you can find different GitHub actions based on Doker images that you can use for test your pull request and cotribute to ST repository or only for testing your code.
 
