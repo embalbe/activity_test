@@ -9,3 +9,4 @@ Below a brief descriprion of the actions availble, inside of every action-folder
 Enjoy :)
 
  - **action_001**: spell check and formatting for code
+ - **action_002**: compile an STM32 project
